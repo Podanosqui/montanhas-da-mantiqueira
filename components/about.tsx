@@ -26,26 +26,26 @@ export function About() {
               Nossa história
             </span>
             <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-              Tradição que passa
+              Detalhes feitos
               <br />
-              <span className="italic">de geração em geração</span>
+              <span className="italic">para se recordar</span>
             </h2>
-            
+
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>
-                Desde 1987, nas encostas da Serra da Mantiqueira, nossa família dedica-se 
-                à arte de produzir queijos e doces artesanais com os métodos tradicionais 
-                herdados de nossos avós.
+                Proporcionar não apenas produtos de qualidade para nossos clientes, mas também experiências que serão inesquecíveis em momentos especiais com quem amamos, tendo essa mesma ideia a fim de torna-la realidade dois amigos de infância se uniram para criar a Montanhas da Mantiqueira.
               </p>
               <p>
-                Utilizamos apenas leite fresco de nossas próprias vacas, criadas em 
-                pastos naturais a mais de 1.500 metros de altitude, onde o clima único 
-                da Mantiqueira confere sabor incomparável aos nossos produtos.
+                Desde o início, cada detalhe foi pensado com dedicação, começando pela escolha do leite selecionado por produtores da região da Mantiqueira, até o processo artesanal de produção, preservando a essência de cada sabor na sua forma legitima, um convite para reviver o gosto do interior.
               </p>
               <p>
-                Cada peça é produzida com atenção aos detalhes, respeitando o tempo 
-                de maturação necessário e mantendo viva a tradição queijeira mineira 
-                que nos orgulhamos tanto.
+                Priorizamos a excelência de nossos produtos para transmitir as boas memórias simples que tivemos quando crianças, raízes profundas convividas em família com os sabores autênticos de Minas Gerais.
+              </p>
+              <p>
+                Esses momentos se tornaram propósito, assim surgiu o laticínio, com a missão de levar às pessoas produtos com identidade em forma de experiências, que carregam amor, cuidado e tradição.
+              </p>
+              <p>
+                Hoje, cada queijo, cada doce, cada derivado, é um pedaço dessa história, feita de amizade, sonhos e compromisso com o melhor. Um verdadeiro encontro de passado e presente, direto das Montanhas da Mantiqueira para a sua mesa.
               </p>
             </div>
 

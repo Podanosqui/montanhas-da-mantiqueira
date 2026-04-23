@@ -19,22 +19,76 @@ const categories = [
 const generateProducts = () => {
   const baseProducts = [
     {
-      name: "Cura Tudo - Remédio Natural - 500ml",
-      category: "outros",
-      tag: "Farmácia",
-      image: "/images/cura-tudo.png",
-      price: 14.0,
+      name: "Doce de Leite com Raspas de Limão - 420g",
+      category: "doces",
+      tag: "Doces",
+      image: "/images/docedeleite-raspaslimao.png",
+      price: 1.0,
       description:
-        "Uma planta medicinal que historicamente auxilia em vários sintomas como, problemas respiratórios, aliviando tosse e bronquite, acelera a cicatrização de feridas, atua como anti-histamínico e diurético, promovendo saúde intestinal e cutânea, dentre outras especificações que a torna uma alternativa natural eficaz.",
+        "O doce de leite artesanal cremoso das Montanhas da Mantiqueira, agora com um toque vibrante de raspas de limão. O frescor cítrico equilibra perfeitamente a doçura natural do leite, criando uma experiência refrescante, que conferem aroma e um sabor levemente exótico. É a Mantiqueira com um toque de modernidade.",
     },
     {
-      name: "37 Ervas - Emagrecimento sem dieta",
-      category: "outros",
-      tag: "Farmácia",
-      image: "/images/37-ervas.png",
-      price: 14.0,
+      name: "Doce de Leite com Menos Açúcar Puro - 420g",
+      category: "doces",
+      tag: "Doces",
+      image: "/images/docedeleite-menosacucar.png",
+      price: 1.0,
       description:
-        "Extrato de Ervas medicinais termogênicas que inibem o apetite e regula o intestino, complementando dietas para emagrecimento. Alguns itens de sua composição são chá verde, carqueja, hibisco, cavalinha entre outros. O consumo deve ser acompanhado de uma dieta equilibrada.",
+        "Nosso doce de leite artesanal é feito em tachos pequenos, respeitando o tempo e a tradição da Serra da Mantiqueira, com menos açúcar e mais leite. Priorizamos a caramelização natural e a pureza do leite selecionado de vacas criadas na altitude. O resultado é um doce de textura aveludada, cor intensa e um sabor equilibrado que não agride o paladar. Perfeito para comer puro, com queijo minas ou coloca-lo em receitas saudáveis.",
+    },
+    {
+      name: "Bala de Doce de Leite Puro",
+      category: "doces",
+      tag: "Doces",
+      image: "/images/docedeleite-.png",
+      price: 1.0,
+      description:
+        "",
+    },
+    {
+      name: "Bala de Doce de Leite com Raspas de Limão",
+      category: "doces",
+      tag: "Doces",
+      image: "/images/docedeleite-.png",
+      price: 1.0,
+      description:
+        "",
+    },
+    {
+      name: "Kit 4 Queijos das Montanhas da Mantiqueira",
+      category: "queijos",
+      tag: "Kit's Queijos",
+      image: "/images/4queijos-mdm.png",
+      price: 1.0,
+      description:
+        "Uma viagem de sabores e tradição, a seleção perfeita para momentos únicos. Com os queijos cobocó, capa preta, minas padrão temperado e meia cura esse kit traz qualidade e variedade num quarteto fantástico de dar água na boca. Queijo Cobocó: Massa amarela, macia e muito amanteigada. Queijo Capa Preta: Massa firme com cobertura de resina especial, sabor acentuado pela maturação.  Queijo Meia Cura: Tradicional processo de cura, textura semidura e sabor equilibrado. Queijo Minas Padrão Temperado: Massa fresca prensada com mix de ervas selecionadas.",
+    },
+    {
+      name: "Queijo Frescal",
+      category: "queijos",
+      tag: "Queijos",
+      image: "/images/-mdm.png",
+      price: 1.0,
+      description:
+        "Um queijo leve e versátil que combina com qualquer hora do seu dia, nosso frescal é produzido com leite selecionado, garantindo aquela textura macia e o sabor suave que todo mundo ama. Baixo em teor de gordura e sódio.",
+    },
+    {
+      name: "Queijo Frescal Furadinho",
+      category: "queijos",
+      tag: "Queijos",
+      image: "/images/-mdm.png",
+      price: 1.0,
+      description:
+        "Equilíbrio perfeito entre leveza e sabor amanteigado. Com uma textura aerada, ele é perfeito para acompanhar seu café da manhã. Sua olhadura deixa a consistência sofisticada que agrada primeiro aos olhos e depois ao paladar.",
+    },
+    {
+      name: "Queijo Meia Cura",
+      category: "queijos",
+      tag: "Queijos",
+      image: "/images/-mdm.png",
+      price: 1.0,
+      description:
+        "Produzimos um meia cura com um sabor marcante iorgutado através de uma temperatura específica por 15 dias. Esse processo garante sua textura firme por fora e macia por dentro. É aquele queijo que 'chora' no corte e derrete perfeitamente no pão na chapa.",
     },
     {
       name: "Provolone Desidratado Tradicional - 80g",
@@ -71,6 +125,33 @@ const generateProducts = () => {
       price: 28.0,
       description:
         "Um contraste perfeito entre salgado e doce proporcionam uma mistura incrível de sabores, combinando o toque coracante e intenso do provolone desitratado com a textura macia e cremosa da goibada, uma versão clássica do romeu e julieta.",
+    },
+    {
+      name: "Kit Queijos Melhor de Minas - 4 Queijos",
+      category: "queijos",
+      tag: "Kit's Queijos",
+      image: "/images/kit-mdm.png",
+      price: 18.0,
+      description:
+        "Quer montar uma tábua de frios de forma rápida e prática? Então essa opção é a melhor pedida. Com o queijo do reino, prato, parmesão e parmesão temperado você não ficará sem opções se suas visitas aparecerem de supresa. Um pedaço de Minas na sua casa para apreciar momentos especias com quem você ama.",
+    },
+    {
+      name: "Kit Queijos Melhor de Minas - Provolone c/ Salame",
+      category: "queijos",
+      tag: "Kit's Queijos",
+      image: "/images/kitao-prov-salame.png",
+      price: 40.0,
+      description:
+        "Mais completo e mais saboroso, a adição do salame curado traz a praticidade e sofisticação para sua mesa de frios, harmonizando com os provolones branco temperado, defumado e capa rosa. ",
+    },
+    {
+      name: "Kit Queijos Melhor de Minas sem Provolone",
+      category: "queijos",
+      tag: "Kit's Queijos",
+      image: "/images/kit-mdm-sprov.png",
+      price: 30.0,
+      description:
+        "Um kit desenvolvido para oferecer uma experiência completa de degustação, reunindo diferentes maturações e temperos em um só lugar. Consistindo no provolone branco temperado, defumado e capa rosa para tornar ainda mais especial os momentos daqueles que são apaixonados por queijo.",
     },
     {
       name: "Goiabada Cascão 250g",
@@ -154,31 +235,22 @@ const generateProducts = () => {
         "A região de Salinas, é reconhecida internacionalmente como a capital da cachaça. Sua qualidade é o resultado de um processo cuidadoso que combina tradição e técnicas reginais de produção para alcançar um alto nível de sabor e complexidade. Esse cuidado garante uma bebida refinada, livre de impurezas e com uma suavidade que conquista os paladares mais exigentes.",
     },
     {
-      name: "Kit Queijos Melhor de Minas - 4 Queijos",
-      category: "queijos",
-      tag: "Kit's Queijos",
-      image: "/images/kit-mdm.png",
-      price: 18.0,
+      name: "Cura Tudo - Remédio Natural - 500ml",
+      category: "outros",
+      tag: "Farmácia",
+      image: "/images/cura-tudo.png",
+      price: 14.0,
       description:
-        "Quer montar uma tábua de frios de forma rápida e prática? Então essa opção é a melhor pedida. Com o queijo do reino, prato, parmesão e parmesão temperado você não ficará sem opções se suas visitas aparecerem de supresa. Um pedaço de Minas na sua casa para apreciar momentos especias com quem você ama.",
+        "Uma planta medicinal que historicamente auxilia em vários sintomas como, problemas respiratórios, aliviando tosse e bronquite, acelera a cicatrização de feridas, atua como anti-histamínico e diurético, promovendo saúde intestinal e cutânea, dentre outras especificações que a torna uma alternativa natural eficaz.",
     },
     {
-      name: "Kit Queijos Melhor de Minas - Provolone c/ Salame",
-      category: "queijos",
-      tag: "Kit's Queijos",
-      image: "/images/kitao-prov-salame.png",
-      price: 40.0,
+      name: "37 Ervas - Emagrecimento sem dieta",
+      category: "outros",
+      tag: "Farmácia",
+      image: "/images/37-ervas.png",
+      price: 14.0,
       description:
-        "Mais completo e mais saboroso, a adição do salame curado traz a praticidade e sofisticação para sua mesa de frios, harmonizando com os provolones branco temperado, defumado e capa rosa. ",
-    },
-    {
-      name: "Kit Queijos Melhor de Minas sem Provolone",
-      category: "queijos",
-      tag: "Kit's Queijos",
-      image: "/images/kit-mdm-sprov.png",
-      price: 30.0,
-      description:
-        "Um kit desenvolvido para oferecer uma experiência completa de degustação, reunindo diferentes maturações e temperos em um só lugar. Consistindo no provolone branco temperado, defumado e capa rosa para tornar ainda mais especial os momentos daqueles que são apaixonados por queijo.",
+        "Extrato de Ervas medicinais termogênicas que inibem o apetite e regula o intestino, complementando dietas para emagrecimento. Alguns itens de sua composição são chá verde, carqueja, hibisco, cavalinha entre outros. O consumo deve ser acompanhado de uma dieta equilibrada.",
     },
 
   ]
@@ -242,7 +314,7 @@ function ProductModal({
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background transition-colors"
+          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background transition-colors hover: cursor-pointer"
           aria-label="Fechar"
         >
           <X className="h-5 w-5 text-foreground" />
@@ -382,7 +454,7 @@ export function ProductCatalog() {
                   variant={selectedCategory === category.id ? "default" : "outline"}
                   size="sm"
                   onClick={() => handleCategoryChange(category.id)}
-                  className="whitespace-nowrap"
+                  className="whitespace-nowrap hover: cursor-pointer"
                 >
                   {category.name}
                 </Button>
@@ -437,6 +509,7 @@ export function ProductCatalog() {
                 size="sm"
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
+                className="hover: cursor-pointer"
               >
                 Anterior
               </Button>
@@ -458,7 +531,7 @@ export function ProductCatalog() {
                       variant={currentPage === pageNum ? "default" : "outline"}
                       size="sm"
                       onClick={() => setCurrentPage(pageNum)}
-                      className="w-9"
+                      className="w-9 hover: cursor-pointer"
                     >
                       {pageNum}
                     </Button>
@@ -470,6 +543,7 @@ export function ProductCatalog() {
                 size="sm"
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
+                className="hover: cursor-pointer"
               >
                 Próximo
               </Button>

@@ -9,7 +9,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-mantiqueira.jpg"
+          src="/images/hero-mantiqueira.png"
           alt="Queijos e doces artesanais da Mantiqueira"
           fill
           className="object-cover"
@@ -24,15 +24,15 @@ export function Hero() {
           <span className="inline-block mb-4 px-4 py-1.5 text-xs font-medium tracking-widest uppercase text-primary-foreground/90 border border-primary-foreground/30 rounded-full">
             Desde 1987
           </span>
-          
+
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-primary-foreground leading-tight text-balance">
             Sabores autênticos
             <br />
             <span className="italic">da Mantiqueira</span>
           </h1>
-          
+
           <p className="mt-6 text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto text-pretty">
-            Queijos e doces artesanais feitos com tradição e amor, 
+            Queijos e doces artesanais feitos com tradição e amor,
             direto das montanhas da Serra da Mantiqueira para sua mesa.
           </p>
 

@@ -18,34 +18,34 @@ type FeaturedProduct = {
 const featuredProducts: FeaturedProduct[] = [
   {
     id: 1,
-    name: "Queijo Minas Artesanal",
-    description: "Sabor suave e textura cremosa, perfeito para o dia a dia. Produzido com leite fresco da nossa fazenda na Serra da Mantiqueira.",
-    image: "/images/product-queijo-minas.jpg",
-    tag: "Mais vendido",
-    price: 34.90,
+    name: "Doce de Leite com Raspas de Limão",
+    description: "O doce de leite artesanal cremoso das Montanhas da Mantiqueira, agora com um toque vibrante de raspas de limão. O frescor cítrico equilibra perfeitamente a doçura natural do leite, criando uma experiência refrescante, que conferem aroma e um sabor levemente exótico. É a Mantiqueira com um toque de modernidade.",
+    image: "/images/docedeleite-raspaslimao.png",
+    tag: "Novidade",
+    price: 1.00,
   },
   {
     id: 2,
-    name: "Queijo Canastra Curado",
-    description: "Maturado por 60 dias, desenvolve notas complexas e cristais de tirosina. Um verdadeiro tesouro da tradição queijeira mineira.",
+    name: "Queijo Meia Cura",
+    description: "Produzimos um meia cura com um sabor marcante iorgutado através de uma temperatura específica por 15 dias.Esse processo garante sua textura firme por fora e macia por dentro.É aquele queijo que 'chora' no corte e derrete perfeitamente no pão na chapa.",
     image: "/images/product-queijo-canastra.jpg",
     tag: "Premium",
     price: 109.90,
   },
   {
     id: 3,
-    name: "Doce de Leite Cremoso",
+    name: "Doce de Leite Menos Açucar Puro",
     description: "Receita tradicional de família, feito em tacho de cobre. Textura cremosa e sabor incomparável do verdadeiro doce de leite mineiro.",
-    image: "/images/product-doce-pote.jpg",
-    tag: "Artesanal",
-    price: 24.90,
+    image: "/images/docedeleite-menosacucar.png",
+    tag: "Menos Açúcar",
+    price: 1.10,
   },
   {
     id: 4,
-    name: "Manteiga da Serra",
-    description: "Feita com nata fresca batida, sem conservantes. O verdadeiro sabor da manteiga artesanal como se fazia antigamente.",
-    image: "/images/product-manteiga.jpg",
-    tag: "Novidade",
+    name: "Kit 4 Queijos das Montanhas da Mantiqueira",
+    description: "Uma viagem de sabores e tradição, a seleção perfeita para momentos únicos. Com os queijos cobocó, capa preta, minas padrão temperado e meia cura esse kit traz qualidade e variedade num quarteto fantástico de dar água na boca. Queijo Cobocó: Massa amarela, macia e muito amanteigada. Queijo Capa Preta: Massa firme com cobertura de resina especial, sabor acentuado pela maturação. Queijo Meia Cura: Tradicional processo de cura, textura semidura e sabor equilibrado. Queijo Minas Padrão Temperado: Massa fresca prensada com mix de ervas selecionadas.",
+    image: "/images/4queijos-mdm.png",
+    tag: "Especialidade",
     price: 32.90,
   },
 ]
@@ -86,7 +86,7 @@ function ProductModal({
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background transition-colors"
+          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background transition-colors hover: cursor-pointer"
           aria-label="Fechar"
         >
           <X className="h-5 w-5 text-foreground" />
@@ -185,7 +185,7 @@ export function FeaturedProducts() {
                 variant="outline"
                 size="icon"
                 onClick={() => scroll("left")}
-                className="rounded-full"
+                className="rounded-full hover:cursor-pointer"
               >
                 <ChevronLeft className="h-5 w-5" />
                 <span className="sr-only">Anterior</span>
@@ -194,7 +194,7 @@ export function FeaturedProducts() {
                 variant="outline"
                 size="icon"
                 onClick={() => scroll("right")}
-                className="rounded-full"
+                className="rounded-full hover:cursor-pointer"
               >
                 <ChevronRight className="h-5 w-5" />
                 <span className="sr-only">Próximo</span>

@@ -17,7 +17,7 @@ export default function Home() {
       <ProductCatalog />
       <About />
       <Differentials />
-      <ProductHighlight />
+      {/* <ProductHighlight /> */}
       <CTA />
       <Footer />
     </main>
