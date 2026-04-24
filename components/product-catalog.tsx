@@ -23,7 +23,7 @@ const generateProducts = () => {
       category: "doces",
       tag: "Doces",
       image: "/images/docedeleite-raspaslimao.png",
-      price: 1.0,
+      price: 28.0,
       description:
         "O doce de leite artesanal cremoso das Montanhas da Mantiqueira, agora com um toque vibrante de raspas de limão. O frescor cítrico equilibra perfeitamente a doçura natural do leite, criando uma experiência refrescante, que conferem aroma e um sabor levemente exótico. É a Mantiqueira com um toque de modernidade.",
     },
@@ -32,7 +32,7 @@ const generateProducts = () => {
       category: "doces",
       tag: "Doces",
       image: "/images/docedeleite-menosacucar.png",
-      price: 1.0,
+      price: 22.0,
       description:
         "Nosso doce de leite artesanal é feito em tachos pequenos, respeitando o tempo e a tradição da Serra da Mantiqueira, com menos açúcar e mais leite. Priorizamos a caramelização natural e a pureza do leite selecionado de vacas criadas na altitude. O resultado é um doce de textura aveludada, cor intensa e um sabor equilibrado que não agride o paladar. Perfeito para comer puro, com queijo minas ou coloca-lo em receitas saudáveis.",
     },
@@ -41,7 +41,7 @@ const generateProducts = () => {
       category: "doces",
       tag: "Doces",
       image: "/images/docedeleite-.png",
-      price: 1.0,
+      price: 15.0,
       description:
         "",
     },
@@ -50,7 +50,7 @@ const generateProducts = () => {
       category: "doces",
       tag: "Doces",
       image: "/images/docedeleite-.png",
-      price: 1.0,
+      price: 18.0,
       description:
         "",
     },
@@ -59,7 +59,7 @@ const generateProducts = () => {
       category: "queijos",
       tag: "Kit's Queijos",
       image: "/images/4queijos-mdm.png",
-      price: 1.0,
+      price: 28.0,
       description:
         "Uma viagem de sabores e tradição, a seleção perfeita para momentos únicos. Com os queijos cobocó, capa preta, minas padrão temperado e meia cura esse kit traz qualidade e variedade num quarteto fantástico de dar água na boca. Queijo Cobocó: Massa amarela, macia e muito amanteigada. Queijo Capa Preta: Massa firme com cobertura de resina especial, sabor acentuado pela maturação.  Queijo Meia Cura: Tradicional processo de cura, textura semidura e sabor equilibrado. Queijo Minas Padrão Temperado: Massa fresca prensada com mix de ervas selecionadas.",
     },
@@ -67,8 +67,8 @@ const generateProducts = () => {
       name: "Queijo Frescal",
       category: "queijos",
       tag: "Queijos",
-      image: "/images/-mdm.png",
-      price: 1.0,
+      image: "/images/queijo-fresco.png",
+      price: 45.0,
       description:
         "Um queijo leve e versátil que combina com qualquer hora do seu dia, nosso frescal é produzido com leite selecionado, garantindo aquela textura macia e o sabor suave que todo mundo ama. Baixo em teor de gordura e sódio.",
     },
@@ -77,7 +77,7 @@ const generateProducts = () => {
       category: "queijos",
       tag: "Queijos",
       image: "/images/-mdm.png",
-      price: 1.0,
+      price: 50.0,
       description:
         "Equilíbrio perfeito entre leveza e sabor amanteigado. Com uma textura aerada, ele é perfeito para acompanhar seu café da manhã. Sua olhadura deixa a consistência sofisticada que agrada primeiro aos olhos e depois ao paladar.",
     },
@@ -85,8 +85,8 @@ const generateProducts = () => {
       name: "Queijo Meia Cura",
       category: "queijos",
       tag: "Queijos",
-      image: "/images/-mdm.png",
-      price: 1.0,
+      image: "/images/queijo-meiacura.png",
+      price: 66.0,
       description:
         "Produzimos um meia cura com um sabor marcante iorgutado através de uma temperatura específica por 15 dias. Esse processo garante sua textura firme por fora e macia por dentro. É aquele queijo que 'chora' no corte e derrete perfeitamente no pão na chapa.",
     },
@@ -281,7 +281,7 @@ function ProductModal({
   product: Product
   onClose: () => void
 }) {
-  const whatsappNumber = "5511999999999"
+  const whatsappNumber = "5535920013051"
   const message = encodeURIComponent(`Olá, tenho interesse no ${product.name}`)
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 

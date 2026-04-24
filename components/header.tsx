@@ -48,7 +48,7 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex lg:items-center lg:gap-4">
           <Button asChild>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5535920013051" target="_blank" rel="noopener noreferrer">
               Falar no WhatsApp
             </a>
           </Button>

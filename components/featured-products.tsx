@@ -22,15 +22,15 @@ const featuredProducts: FeaturedProduct[] = [
     description: "O doce de leite artesanal cremoso das Montanhas da Mantiqueira, agora com um toque vibrante de raspas de limão. O frescor cítrico equilibra perfeitamente a doçura natural do leite, criando uma experiência refrescante, que conferem aroma e um sabor levemente exótico. É a Mantiqueira com um toque de modernidade.",
     image: "/images/docedeleite-raspaslimao.png",
     tag: "Novidade",
-    price: 1.00,
+    price: 28.00,
   },
   {
     id: 2,
     name: "Queijo Meia Cura",
     description: "Produzimos um meia cura com um sabor marcante iorgutado através de uma temperatura específica por 15 dias.Esse processo garante sua textura firme por fora e macia por dentro.É aquele queijo que 'chora' no corte e derrete perfeitamente no pão na chapa.",
-    image: "/images/product-queijo-canastra.jpg",
+    image: "/images/queijo-meiacura.png",
     tag: "Premium",
-    price: 109.90,
+    price: 66.00,
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const featuredProducts: FeaturedProduct[] = [
     description: "Receita tradicional de família, feito em tacho de cobre. Textura cremosa e sabor incomparável do verdadeiro doce de leite mineiro.",
     image: "/images/docedeleite-menosacucar.png",
     tag: "Menos Açúcar",
-    price: 1.10,
+    price: 22.00,
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const featuredProducts: FeaturedProduct[] = [
     description: "Uma viagem de sabores e tradição, a seleção perfeita para momentos únicos. Com os queijos cobocó, capa preta, minas padrão temperado e meia cura esse kit traz qualidade e variedade num quarteto fantástico de dar água na boca. Queijo Cobocó: Massa amarela, macia e muito amanteigada. Queijo Capa Preta: Massa firme com cobertura de resina especial, sabor acentuado pela maturação. Queijo Meia Cura: Tradicional processo de cura, textura semidura e sabor equilibrado. Queijo Minas Padrão Temperado: Massa fresca prensada com mix de ervas selecionadas.",
     image: "/images/4queijos-mdm.png",
     tag: "Especialidade",
-    price: 32.90,
+    price: 28.00,
   },
 ]
 
@@ -57,7 +57,7 @@ function ProductModal({
   product: FeaturedProduct
   onClose: () => void
 }) {
-  const whatsappNumber = "5511999999999"
+  const whatsappNumber = "5535920013051"
   const message = encodeURIComponent(`Olá, tenho interesse no ${product.name}`)
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 

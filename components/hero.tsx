@@ -44,7 +44,7 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="h-12 px-8 text-base bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground">
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5535920013051" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Falar no WhatsApp
               </a>

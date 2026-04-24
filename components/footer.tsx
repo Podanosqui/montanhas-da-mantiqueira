@@ -24,15 +24,15 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-primary-foreground">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-15">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="#" className="flex items-center gap-2">
               <img src="/images/logo-mdm-branco.png" alt="Logo Montanhas da Mantiqueira" className="w-45" />
             </Link>
-            <p className="mt-4 text-primary-foreground/70 max-w-md">
+            <p className="mt-4 text-sm text-primary-foreground/70 max-w-md">
               Queijos e doces artesanais feitos com tradição e amor na Serra da Mantiqueira,
-              trazendo o autêntico sabor mineiro para sua mesa desde 1987.
+              trazendo o autêntico sabor mineiro para sua mesa.
             </p>
             {/* Social links */}
             <div className="mt-6 flex gap-4">
@@ -57,7 +57,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -71,16 +71,16 @@ export function Footer() {
             <h3 className="font-serif text-lg font-medium mb-4">Contato</h3>
             <ul className="space-y-3 text-primary-foreground/70">
               <li>
-                <a href="tel:+5511999999999" className="hover:text-primary-foreground transition-colors">
-                  (11) 99999-9999
+                <a href="tel:+5535920013051" className="hover:text-primary-foreground text-sm transition-colors">
+                  (35) 92001-3051
                 </a>
               </li>
               <li>
-                <a href="mailto:contato@montanhasdamantiqueira.com.br" className="hover:text-primary-foreground transition-colors">
-                  email@email.com
+                <a href="mailto:montanhasdamantiqueiracf@gmail.com" className="font-sm text-sm hover:text-primary-foreground transition-colors">
+                  E-mail
                 </a>
               </li>
-              <li className="pt-2">
+              <li className="pt-2 text-sm">
                 {/* Serra da Mantiqueira
                 <br /> */}
                 Minas Gerais, Brasil

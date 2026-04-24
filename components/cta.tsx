@@ -30,16 +30,16 @@ export function CTA() {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button asChild size="lg" className="h-14 px-10 text-base bg-primary-foreground text-foreground hover:bg-primary-foreground/90">
+          {/* <Button asChild size="lg" className="h-14 px-10 text-base bg-primary-foreground text-foreground hover:bg-primary-foreground/90">
             <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" />
               Falar no WhatsApp
             </a>
-          </Button>
+          </Button> */}
           <Button asChild size="lg" variant="outline" className="h-14 px-10 text-base bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground">
-            <a href="tel:+5511999999999">
+            <a href="tel:+5535920013051">
               <Phone className="mr-2 h-5 w-5" />
-              (11) 99999-9999
+              (35) 92001-3051
             </a>
           </Button>
         </div>

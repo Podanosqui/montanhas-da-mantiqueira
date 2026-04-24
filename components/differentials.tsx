@@ -16,11 +16,11 @@ const differentials = [
     title: "Qualidade Premium",
     description: "Ingredientes selecionados e processos que garantem o melhor sabor.",
   },
-  {
-    icon: Users,
-    title: "Tradição Familiar",
-    description: "Receitas passadas de geração em geração há mais de 37 anos.",
-  },
+  // {
+  //   icon: Users,
+  //   title: "Tradição Familiar",
+  //   description: "Receitas passadas de geração em geração há mais de 37 anos.",
+  // },
 ]
 
 export function Differentials() {
@@ -38,7 +38,7 @@ export function Differentials() {
         </div>
 
         {/* Differentials Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-8">
           {differentials.map((item, index) => (
             <div
               key={index}

@@ -50,10 +50,10 @@ export function About() {
             </div>
 
             {/* Stats */}
-            <div className="mt-10 grid grid-cols-3 gap-8">
+            <div className="mt-10 grid grid-cols-2 gap-8">
               <div>
                 <div className="font-serif text-3xl md:text-4xl font-medium text-primary">
-                  37+
+                  9+
                 </div>
                 <div className="mt-1 text-sm text-muted-foreground">
                   Anos de tradição
@@ -61,20 +61,20 @@ export function About() {
               </div>
               <div>
                 <div className="font-serif text-3xl md:text-4xl font-medium text-primary">
-                  100+
+                  8+
                 </div>
                 <div className="mt-1 text-sm text-muted-foreground">
                   Produtos artesanais
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className="font-serif text-3xl md:text-4xl font-medium text-primary">
                   50k+
                 </div>
                 <div className="mt-1 text-sm text-muted-foreground">
                   Clientes satisfeitos
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
