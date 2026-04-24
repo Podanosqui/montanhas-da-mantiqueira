@@ -76,7 +76,7 @@ const generateProducts = () => {
       name: "Queijo Frescal Furadinho",
       category: "queijos",
       tag: "Queijos",
-      image: "/images/-mdm.png",
+      image: "/images/queijo-fresco-furadinho.png",
       price: 50.0,
       description:
         "Equilíbrio perfeito entre leveza e sabor amanteigado. Com uma textura aerada, ele é perfeito para acompanhar seu café da manhã. Sua olhadura deixa a consistência sofisticada que agrada primeiro aos olhos e depois ao paladar.",
