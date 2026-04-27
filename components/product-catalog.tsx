@@ -285,45 +285,64 @@ function ProductModal({
   const message = encodeURIComponent(`Olá, tenho interesse no ${product.name}`)
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 
-  // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose()
+      if (e.key === "Escape") handleClose()
     }
+
+    const handlePopState = () => {
+      onClose()
+    }
+
+    if (!window.history.state?.modal) {
+      window.history.pushState({ modal: true }, "")
+    }
+
     document.addEventListener("keydown", handleEscape)
+    window.addEventListener("popstate", handlePopState)
+
     document.body.style.overflow = "hidden"
+
     return () => {
       document.removeEventListener("keydown", handleEscape)
+      window.removeEventListener("popstate", handlePopState)
       document.body.style.overflow = "unset"
     }
   }, [onClose])
 
+  const handleClose = () => {
+    onClose()
+    if (window.history.state?.modal) {
+      window.history.back()
+    }
+  }
+
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-in fade-in duration-200"
-      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
+      onClick={handleClose}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-foreground/60 backdrop-blur-sm" />
 
       {/* Modal */}
       <div
-        className="relative w-full max-w-lg bg-card rounded-xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200 md:max-w-2xl"
+        className="relative w-full max-w-lg md:max-w-2xl bg-card rounded-xl shadow-2xl
+        max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close button */}
+        {/* Close */}
         <button
-          onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background transition-colors hover: cursor-pointer"
-          aria-label="Fechar"
+          onClick={handleClose}
+          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background transition-colors cursor-pointer"
         >
-          <X className="h-5 w-5 text-foreground" />
+          <X className="h-5 w-5" />
         </button>
 
-        {/* Content */}
-        <div className="flex flex-col md:flex-row">
-          {/* Image */}
-          <div className="relative aspect-square w-full md:w-1/2 bg-muted">
+        {/* Conteúdo com scroll */}
+        <div className="flex flex-col md:flex-row overflow-y-auto">
+          {/* Imagem */}
+          <div className="relative aspect-square w-full md:w-1/2 bg-muted shrink-0">
             <Image
               src={product.image}
               alt={product.name}
@@ -336,23 +355,24 @@ function ProductModal({
           </div>
 
           {/* Info */}
-          <div className="flex flex-col p-6 md:w-1/2">
-            <h3 className="font-serif text-2xl font-medium text-foreground">
+          <div className="flex flex-col p-5 md:p-6 md:w-1/2">
+            <h3 className="font-serif text-xl md:text-2xl font-medium">
               {product.name}
             </h3>
 
-            <p className="mt-4 text-muted-foreground leading-relaxed">
+            <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed">
               {product.description}
             </p>
 
-            <div className="mt-6">
+            <div className="mt-5">
               <span className="text-sm text-muted-foreground">Preço</span>
-              <p className="text-3xl font-semibold text-primary">
+              <p className="text-2xl md:text-3xl font-semibold text-primary">
                 R$ {product.price.toFixed(2).replace(".", ",")}
               </p>
             </div>
 
-            <div className="mt-auto pt-6">
+            {/* Botão fixo bonito */}
+            <div className="mt-auto pt-6 sticky bottom-0 bg-card">
               <Button
                 asChild
                 size="lg"

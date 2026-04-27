@@ -63,25 +63,48 @@ function ProductModal({
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose()
+      if (e.key === "Escape") handleClose()
     }
+
+    const handlePopState = () => {
+      onClose()
+    }
+
+    // Adiciona no histórico (apenas 1 vez)
+    if (!window.history.state?.modal) {
+      window.history.pushState({ modal: true }, "")
+    }
+
     document.addEventListener("keydown", handleEscape)
+    window.addEventListener("popstate", handlePopState)
+
     document.body.style.overflow = "hidden"
+
     return () => {
       document.removeEventListener("keydown", handleEscape)
+      window.removeEventListener("popstate", handlePopState)
       document.body.style.overflow = "unset"
     }
   }, [onClose])
 
+  const handleClose = () => {
+    onClose()
+
+    // evita quebrar o histórico
+    if (window.history.state?.modal) {
+      window.history.back()
+    }
+  }
+
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-in fade-in duration-200 max-w-90%"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 animate-in fade-in duration-200 max-w-90%"
       onClick={onClose}
     >
       <div className="absolute inset-0 bg-foreground/60 backdrop-blur-sm" />
 
       <div
-        className="relative w-full max-w-lg bg-card rounded-xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200 md:max-w-2xl"
+        className="relative w-full max-w-lg bg-card rounded-xl shadow-2xl md:max-w-2xl max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -92,8 +115,8 @@ function ProductModal({
           <X className="h-5 w-5 text-foreground" />
         </button>
 
-        <div className="flex flex-col md:flex-row">
-          <div className="relative aspect-square w-full md:w-1/2 bg-muted">
+        <div className="flex flex-col md:flex-row overflow-y-auto">
+          <div className="relative aspect-square w-full md:w-1/2 bg-muted shrink-0">
             <Image
               src={product.image}
               alt={product.name}
