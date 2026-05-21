@@ -40,7 +40,7 @@ const generateProducts = () => {
       name: "Bala de Doce de Leite Puro",
       category: "doces",
       tag: "Doces",
-      image: "/images/docedeleite-.png",
+      image: "/images/bala-doce-de-leite.png",
       price: 15.0,
       description:
         "",
@@ -49,7 +49,7 @@ const generateProducts = () => {
       name: "Bala de Doce de Leite com Raspas de Limão",
       category: "doces",
       tag: "Doces",
-      image: "/images/docedeleite-.png",
+      image: "/images/bala-doce-de-leite-limao.png",
       price: 18.0,
       description:
         "",
@@ -76,7 +76,7 @@ const generateProducts = () => {
       name: "Queijo Frescal Furadinho",
       category: "queijos",
       tag: "Queijos",
-      image: "/images/queijo-fresco-furadinho.png",
+      image: "/images/queijo-furadinho.png",
       price: 50.0,
       description:
         "Equilíbrio perfeito entre leveza e sabor amanteigado. Com uma textura aerada, ele é perfeito para acompanhar seu café da manhã. Sua olhadura deixa a consistência sofisticada que agrada primeiro aos olhos e depois ao paladar.",
